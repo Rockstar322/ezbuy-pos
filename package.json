@@ -2,23 +2,39 @@
   "name": "proj",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint",
-    "seed": "node --env-file=.env.local src/scripts/seed.mjs"
+    "dev": "vite",
+    "dev:https": "HTTPS=true vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
     "bcryptjs": "^3.0.3",
+    "canvas-confetti": "^1.9.4",
+    "framer-motion": "^14.3.0",
+    "html5-qrcode": "^2.3.8",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.9",
+    "lucide-react": "^1.59.0",
     "mongoose": "^9.11.1",
     "next": "16.4.0",
     "next-auth": "^5.0.0-beta.32",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "recharts": "^3.10.1"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.6.1",
     "eslint": "^9",
-    "eslint-config-next": "16.4.0"
+    "eslint-config-next": "16.4.0",
+    "postcss": "^8.5.30",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.4"
   }
 }
